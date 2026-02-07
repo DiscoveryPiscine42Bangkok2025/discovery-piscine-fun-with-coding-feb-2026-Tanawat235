@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To do or not to do</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
+        #ft_list {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        #ft_list div {
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #f0f0f0;
+            cursor: pointer;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            word-wrap: break-word;
+        }
+
+        #ft_list div:hover {
+            background-color: #e0e0e0;
+            transform: scale(1.02);
+            transition: 0.2s;
+        }
+
+        button {
+            padding: 10px 30px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <button id="new">New To Do List</button>
+    <div id="ft_list"></div>
+    <script src="todo.js"></script>
+</body>
+</html>
